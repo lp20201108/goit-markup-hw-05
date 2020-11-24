@@ -13,7 +13,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <!-- style CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -95,19 +95,21 @@
     <div class="container">
     <h2 class="section-title">Чем мы занимаемся</h2>
     <ul class="company-directions list">
-        <li>
-            <a href=""><img src="./images/descktopapps.jpg" alt="компьютер на рабочем столе и человек, использующего планшет и компьютер"
+        <li class="direction-item">
+            <a href=""class="direction-link"><img class="direction-image" src="./images/descktopapps.jpg" alt="компьютер на рабочем столе и человек, использующего планшет и компьютер"
                 width="370" height="294"></a>
-                <h3 class="subtitle">Десктопные приложения</h3>
+               <div class="subtitle-section">
+                   <h3 class="subtitle">Десктопные приложения</h3>
+                </div> 
         </li>
-        <li>
-       <a href=""><img src="./images/mobileapps.jpg" alt="изображение смартфона" width="370" height="294"></a>
-          <h3>Мобильные приложения</h3>    
+        <li class="direction-item">
+       <a href=""class="direction-link"><img class="direction-image" src="./images/mobileapps.jpg" alt="изображение смартфона" width="370" height="294"></a>
+          <h3 class="subtitle"> Мобильные приложения</h3>    
     </li>
-        <li>
-        <a href=""><img src="./images/designsolutions.jpg" alt=" рука человека, держащего планшет и выбирающего цвета" width="370"
+        <li class="direction-item">
+        <a href=""class="direction-link"><img class="direction-image" src="./images/designsolutions.jpg" alt=" рука человека, держащего планшет и выбирающего цвета" width="370"
             height="294"></a>
-            <h3>Дизайнерские решения</h3>
+            <h3  class="subtitle">Дизайнерские решения</h3>
         </li>
     </ul>
     </div>
@@ -271,14 +273,15 @@
          <div class="logotip-footer"><a class="logotip" href="index.html"> <span class="logo-web">Web</span>
             <span class="logo-studio">Studio</span></a> </div>
        
-         <address class="address">
-            <ul class="contacts-footer list">
-         <li>г. Киев, пр-т Леси Украинки, 26</li>
-        <li><a href="mailto:info@devstudio.com" class="email" aria-label="email">info@devstudio.com </a></li>
-        <li><a href="tel:+380961111111" class="tel" aria-label="phone">+38 096 111 11 11 </a></li>
-    </ul>
-     </address>
+             <address class="address">
+             <ul class="contacts-footer list">
+             <li>г. Киев, пр-т Леси Украинки, 26</li>
+             <li><a href="mailto:info@devstudio.com" class="email" aria-label="email">info@devstudio.com </a></li>
+             <li><a href="tel:+380961111111" class="tel" aria-label="phone">+38 096 111 11 11 </a></li>
+          </ul>
+       </address>
     </div>
+    
      <div class="social-footer">
          <h3 class="footer-title">присоединяйтесь</h3>
          <ul class="social-list list">
@@ -300,16 +303,63 @@
                          </svg></a></li>
          </ul>
     </div>
+
+    <div class="subscribe-footer">
+        <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+        <form action="#" class="subscribe-form">
+        <input type="email" name="user-email-subscribe" class="suscribe-email-input"  placeholder="E-mail">
+        <button type="submit" class="subscribe button call">Подписаться
+            <!-- <svg class="close-icon">
+                <use href="./images/sprite.svg#envelope"></use>
+            </svg> -->
+        </button>
+    </form>
+   </div>
   </div>
   </footer>
 <!-- Модальное окно -->
-<div class="backdrop hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal-window">
-        <button type="button" class="modal-close-button" data-modal-close>X
-            <svg class="close-icon" width="6" height="6">
-                <use href="./images/sprite.svg#close"></use>
+        <button type="button" class="modal-close-button" data-modal-close>
+            <svg class="close-icon">
+                <use href="./images/sprite.svg#envelope"></use>
             </svg>
         </button>
+        <form action="#" class="modal-form">
+            <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
+            <label class="modal-form-field"> 
+                Имя
+             <input name="user-name" type="text" class="modal-form-input"> 
+               <svg class="form-icon">
+                   <use href="./images/sprite.svg#person"></use>
+               </svg>
+            </label>
+            <label class="modal-form-field"> 
+                Телефон
+                <input name="user-tel" type="tel" class="modal-form-input">
+                <svg class="form-icon">
+                    <use href="./images/sprite.svg#phone"></use>
+                </svg>
+            </label>
+            <label class="modal-form-field">
+                Почта
+            <input name="user-mail" type="email" class="modal-form-input">
+            <svg class="form-icon">
+                <use href="./images/sprite.svg#email"></use>
+            </svg>
+             </label>
+            <label class="modal-form-field">
+                Комментарий
+                <textarea name="user-message" class="modal-form-message" 
+                placeholder="Введите текст"></textarea></label>
+           
+                <label for="policy" class="contact-form-policy-label">        
+            <input type="checkbox" name="user-policy" value="agree-policy" class="policy">
+            Соглашаюсь с рассылкой и принимаю&nbsp;
+            <a href="" class="policy-link">Условия договора</a> </label>
+            <button type="submit" class="form button call">Отправить
+            </button>
+        </form>
     </div>
 </div>
 
