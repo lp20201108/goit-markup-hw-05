@@ -56,7 +56,7 @@
 <section class="hero section">
     <div class="container">
     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-    <button class="button primary call" type="button">Заказать услугу</button>
+    <button  type="button" class="button primary call" data-modal-open>Заказать услугу</button>
     </div>
 </section>
 
@@ -98,13 +98,16 @@
         <li>
             <a href=""><img src="./images/descktopapps.jpg" alt="компьютер на рабочем столе и человек, использующего планшет и компьютер"
                 width="370" height="294"></a>
+                <h3 class="subtitle">Десктопные приложения</h3>
         </li>
         <li>
        <a href=""><img src="./images/mobileapps.jpg" alt="изображение смартфона" width="370" height="294"></a>
-        </li>
+          <h3>Мобильные приложения</h3>    
+    </li>
         <li>
         <a href=""><img src="./images/designsolutions.jpg" alt=" рука человека, держащего планшет и выбирающего цвета" width="370"
             height="294"></a>
+            <h3>Дизайнерские решения</h3>
         </li>
     </ul>
     </div>
@@ -280,25 +283,38 @@
          <h3 class="footer-title">присоединяйтесь</h3>
          <ul class="social-list list">
             <li class="social-list-item">
-              <a href="" class="social-link"><svg class="social-icon" width=20px height=20px>
+              <a href="" class="social-link"><svg class="social-icon" >
                  <use href="./images/sprite.svg#instagram"> </use>
              </svg></a></li>
             <li class="social-list-item">
-                 <a href="" class="social-link"><svg class="social-icon" width=20px height=20px>
+                 <a href="" class="social-link"><svg class="social-icon" >
                      <use href="./images/sprite.svg#twitter"> </use>
                  </svg></a></li>
            <li class="social-list-item">
-                     <a href="" class="social-link"><svg class="social-icon" width=20px height=20px>
+                     <a href="" class="social-link"><svg class="social-icon" >
                          <use href="./images/sprite.svg#facebook"> </use>
                      </svg></a></li>
            <li class="social-list-item">
-                         <a href="" class="social-link"><svg class="social-icon" width=20px height=20px>
+                         <a href="" class="social-link"><svg class="social-icon" >
                              <use href="./images/sprite.svg#linkedin"> </use>
                          </svg></a></li>
          </ul>
     </div>
   </div>
   </footer>
+<!-- Модальное окно -->
+<div class="backdrop hidden" data-modal>
+    <div class="modal-window">
+        <button type="button" class="modal-close-button" data-modal-close>X
+            <svg class="close-icon" width="6" height="6">
+                <use href="./images/sprite.svg#close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<script src="./js/modal.js"></script>
+
 </body>
 </html>
 
