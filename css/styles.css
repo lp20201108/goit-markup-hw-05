@@ -746,6 +746,8 @@ margin-bottom: 4px;
     position: absolute;
     top: 8px;
     right: 8px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: #ffffff;
     border: 2px solid rgba(0, 0, 0, 0.1);
@@ -753,12 +755,10 @@ margin-bottom: 4px;
     }
   
   .close-icon{
- 
-    width: 6px;
-    height: 6px;
+     width: 11px;
+    height: 11px;
     fill: black;
     }
-
 
   .is-hidden {
     opacity: 0;
