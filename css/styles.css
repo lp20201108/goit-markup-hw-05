@@ -512,7 +512,6 @@ margin-bottom: 30px;
 }
 
 
-
 .social-link .social-icon{
   width: 20px;
   height: 20px;
@@ -627,8 +626,12 @@ margin-bottom: 4px;
   flex-wrap: wrap;
   }
 
+  .portofolio-list-item{
+    margin-top: 30px;
+  }
+
  .portofolio-list-item img{
-  margin-top: 30px;
+  /* margin-top: 30px; */
   transition-property: box-shadow;
    transition-duration: 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -680,20 +683,21 @@ margin-bottom: 4px;
   
 
   .portofolio-list-item .text-cover{
+    margin: 0;
     display: flex;
     position: absolute;
     padding: 63px 24px;
     top: 0;
     left: 0;
     width: 100%;
-    height: 294px;
+    height: 100%;
     align-items: center;
     background-color: rgba(33, 150, 243, 0.9);
     font-size: 18px;
     line-height: 1.56em;
     transform: translateY(100%);
     color: var(--primary-white-color);
-    transition-property:translate;
+    transition-property: all;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -744,12 +748,12 @@ margin-bottom: 4px;
     right: 8px;
     border-radius: 50%;
     background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     }
   
   .close-icon{
-    text-align: center;
+ 
     width: 6px;
     height: 6px;
     fill: black;
@@ -884,10 +888,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
   width: 16px;
   height: 16px;
-  outline: 2px solid #212121;
-  border-radius: 3px;
+  border: 2px solid #212121;
   margin-right: 9px;
-  border-radius:8px;
+  border-radius:4px;
   background-image: url(../images/icon-checked.svg);
   background-repeat: no-repeat;
   background-color: white;
@@ -897,7 +900,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .policy:checked + .form-policy-label::before {
   background-color: var(--effect-color);
-  outline:var(--effect-color);
+   border:var(--effect-color);
   border-radius: 2px;
   }
 
