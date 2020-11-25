@@ -410,28 +410,33 @@ text-transform: uppercase;
   justify-content: space-between;
 }
 
-.subtitle-section{
-  position: absolute;
-  display: block;
-width: 370px;
-height: 70px;
+.direction-item{
+ position:relative;
 }
+
+.overlay-section{
+  position: relative;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+   bottom: 19%;
+   left: 0;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
 
  .company-directions .subtitle{
   width: fit-content;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.14em;
+  line-height: 1.16em;
   text-align: center;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  /* display:block; */
-  background-image:  linear-gradient(
-    rgba(47, 48, 58, 0.8),
-    rgba(47, 48, 58, 0.8));
-  /* padding-top: 27px;
-  padding-bottom: 27px; */
- 
+  margin: 27px 0;
   }
 
 
@@ -456,13 +461,17 @@ height: 70px;
   justify-content: space-between;
   }
 
+.team-item-description{
+  padding:30px ;
+}
+
 
 .under.section-title{
   font-weight: 500;
   font-size: 16px;
  line-height: 1.18em;
  text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .job{
@@ -510,7 +519,7 @@ margin-bottom: 30px;
 
 .team-item-description .social-link:hover,
 .team-item-description .social-link:focus {
-     background-color:var(--effect-color);
+   background-color:var(--effect-color);
 }
 
 .social-link:hover .social-icon{
@@ -576,160 +585,6 @@ margin-bottom: 30px;
      .client-list li:not(:last-child) {
       margin-right: 30px;
     }
-
-/*===== footer section ================= */
-
- .footer {
-   background-color: var(--dark-background-color);
-  }
-
-.footer .address,
-.footer .logo-studio {
-  color: var(--primary-white-color);
-  }
-
- .logotip-footer{
-  margin-top: 0;
-  margin-bottom: 30px;
- }
-
- 
-  .footer-container{
-    display:flex;
-    align-items: baseline;
-    height: 252px;
-    padding-top: 60px;
-    padding-bottom: 60px;
- } 
-
- .adress-footer{
-  margin-right: 70px;
-  
- } 
-
-  .address {
-  font-style: inherit;
-  color: #212121;
-  width: 231px;
-  height: 81px;
-}
-
-.email,
-.tel {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.contacts-footer li:not(:last-child){
-  margin-top: 0;
-  margin-bottom:9px;
-}
-
-
-
-.social-footer .footer-title,
-.subscribe-title{
-  margin-left: 0;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14em;
-  text-transform: uppercase;
-  text-align: left;
-  color: var(--primary-white-color);
-  
-}
-
-.social-footer .social-link{
-  background-color: rgba(255, 255, 255, 0.1);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.social-footer .social-link:hover,
-.social-footer .social-link:focus{
-  background-color:var(--effect-color);
-}
-
-.social-footer .social-list-item:not(:last-child){
-  margin-right:10px;
-}
-
-.social-footer .social-icon{
-fill: var(--primary-white-color)
-}
-
-.social-footer{
-  padding: 0px;
-  width: 206px;
-  height: 80px;
-  margin-right: 93px;
- }
-
- .subscribe-footer{
-  width: 570px;
-  height: 86px;
-  padding-left:0px; 
-  margin-right: 215px;
- }
-
- .subscribe-form{
-   display: flex;
-   }
- 
- .suscribe-email-input{
-  display: block;
-  width: 358px;
-  height: 50px;
-  border:none;
-  border: 1px solid  rgba(255, 255, 255, 0.6);
-  border-radius: 4px;
-  background:transparent;
-  padding-left: 16px;
-  color: white;
-  font:50px;
- }
-
- suscribe-email-input::placeholder{
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.suscribe-email-input:focus{
-  border:none;
-  border: 1px solid  rgba(255, 255, 255, 0.6);
-  border-radius: 4px;
-}
-
-.subscribe.button{
-  display: block;
-  background-color:var(--effect-color);
-  color: var(--primary-white-color);
-  min-width: ;width: 200px;
-  height: 50px;
-  padding: 10px 62px 10px 29px;
-  margin-right: auto;
-  margin-left: 12px;
-  cursor: pointer;
-  position: relative;
- }
-
- .subscribe.button::after{
-  content: "";
-  display:inline-block;
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../images/icon-send.svg);
-  position: absolute;
-  top:25%;
-  right:28px;
-}
 
 
 
@@ -1039,3 +894,159 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline:var(--effect-color);
   border-radius: 2px;
   }
+
+
+  /*===== footer section ================= */
+
+ .footer {
+   background-color: var(--dark-background-color);
+  }
+
+.footer .address,
+.footer .logo-studio {
+  color: var(--primary-white-color);
+  }
+
+ .logotip-footer{
+  margin-top: 0;
+  margin-bottom: 30px;
+ }
+
+ 
+  .footer-container{
+    display:flex;
+    align-items: baseline;
+    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+ } 
+
+ .adress-footer{
+  margin-right: 70px;
+  
+ } 
+
+  .address {
+  font-style: inherit;
+  color: #212121;
+  width: 231px;
+  height: 81px;
+}
+
+.email,
+.tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts-footer li:not(:last-child){
+  margin-top: 0;
+  margin-bottom:9px;
+}
+
+
+
+.social-footer .footer-title,
+.subscribe-title{
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--primary-white-color);
+  
+}
+
+.social-footer .social-link{
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.social-footer .social-link:hover,
+.social-footer .social-link:focus{
+  background-color:var(--effect-color);
+}
+
+.social-footer  .social-list-item:not(:last-child){
+  margin-right:10px;
+}
+
+.social-footer .social-icon{
+fill: var(--primary-white-color)
+}
+
+.social-footer{
+  padding: 0px;
+  width: 206px;
+  height: 80px;
+  margin-right: 93px;
+ }
+
+ .subscribe-footer{
+  width: 570px;
+  height: 86px;
+  padding-left:0px; 
+  margin-right: 215px;
+ }
+
+ .subscribe-form{
+   display: flex;
+   }
+ 
+ .suscribe-email-input{
+  display: block;
+  width: 358px;
+  height: 50px;
+  border:none;
+  border: 1px solid  rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  background:transparent;
+  padding-left: 16px;
+  color: white;
+  font:50px;
+ }
+
+ suscribe-email-input::placeholder{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.suscribe-email-input:focus{
+  border:none;
+  border: 1px solid  rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
+.subscribe.button{
+  display: block;
+  background-color:var(--effect-color);
+  color: var(--primary-white-color);
+  min-width: ;width: 200px;
+  height: 50px;
+  padding: 10px 62px 10px 29px;
+  margin-right: auto;
+  margin-left: 12px;
+  cursor: pointer;
+  position: relative;
+ }
+
+ .subscribe.button::after{
+  content: "";
+  display:inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/icon-send.svg);
+  position: absolute;
+  top:25%;
+  right:28px;
+}
+
