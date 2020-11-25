@@ -63,7 +63,7 @@
 <!-- наши приоритеты -->
 <section class=" priority section">
     <div class="container">
-    <!-- <h2 class=" priority section-title">наши приоритеты</h2> -->
+    <h2 class=" priority section-title visually-hidden">наши приоритеты</h2>
     <div class="priority-container">
     <ul class="company-values list">
         <li>
@@ -309,10 +309,7 @@
         <form action="#" class="subscribe-form">
         <input type="email" name="user-email-subscribe" class="suscribe-email-input"  placeholder="E-mail">
         <button type="submit" class="subscribe button call">Подписаться
-            <!-- <svg class="close-icon">
-                <use href="./images/sprite.svg#envelope"></use>
-            </svg> -->
-        </button>
+         </button>
     </form>
    </div>
   </div>
@@ -353,8 +350,9 @@
                 <textarea name="user-message" class="modal-form-message" 
                 placeholder="Введите текст"></textarea></label>
            
-                <label for="policy" class="contact-form-policy-label">        
-            <input type="checkbox" name="user-policy" value="agree-policy" class="policy">
+          
+            <input type="checkbox" name="user-policy" value="agree-policy" class="policy visually-hidden" id="policy">
+            <label for="policy" class="form-policy-label">   
             Соглашаюсь с рассылкой и принимаю&nbsp;
             <a href="" class="policy-link">Условия договора</a> </label>
             <button type="submit" class="form button call">Отправить
